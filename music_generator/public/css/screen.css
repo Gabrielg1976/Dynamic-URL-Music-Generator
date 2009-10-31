@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+body {
+  margin: 2em;
+  background-image: url("/images/pattbg.jpg");
+  background-repeat: repeat/repeat-x/repeat-y;
+}
+
+#content {
+  margin: 1em;
+  background: #fff;
+  padding: 1em;
+  -moz-border-radius: 3em;
+  -webkit-border-radius: 3em;
+  border-radius: 3em;
+}
+
+#header {
+  width:80%;
+  margin: 1em;
+  background: #fff;
+  padding: 1em;
+  -moz-border-radius: 3em;
+  -webkit-border-radius: 3em;
+  border-radius: 3em;
+}
+
+
+
+#content2 {
+ float:right;
+ width:30%;
+ margin: 1em;
+ background: #ddd;
+ padding: 1em;
+ -moz-border-radius: 3em;
+ -webkit-border-radius: 3em;
+ border-radius: 3em;
+}
+
+
+p {
+  margin: 1em;
+}
+
+ul, ol {
+  margin-left: 3em;
+}
