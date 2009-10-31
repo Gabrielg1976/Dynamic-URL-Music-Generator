@@ -1,2 +1,14 @@
 Welcome to Dynamic URL Music Generation 
-Proof of Concept Ramaze App 
+( Proof of Concept Ramaze Music App )
+
+The Goal of this Application is to generate Music Dynamical Both through a Simple form or Simple Restful URL changes
+
+Basic Layout Idea for restful Music Generation 
+
+play = will generate a Musical score based off the users form input
+it requires 3 Arguments after the play  
+1st => number of notes you want generated 
+2nd => set of number is Tempo 
+3rd => is the scale you want the composition based around 
+ 
+Example url would look like => http://localhost:7000/play/32/120/major
