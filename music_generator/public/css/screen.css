@@ -9,8 +9,8 @@ h1 {
 
 body {
   margin: 2em;
-  background-image: url("/images/pattbg.jpg");
-  background-repeat: repeat/repeat-x/repeat-y;
+  background-color:#A5CAAB; 
+
 }
 
 #content {

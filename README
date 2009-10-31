@@ -16,4 +16,10 @@ Example url would look like => http://localhost:7000/play/32/120/major
 Resent Changes include
 
 Added require midilib Gem to the app.rb file 
-Finished Designing rough basic forms layout  
+Finished Designing rough basic forms layout 
+created a lib folder for storing scale.rb and chord.rb for dynamic pulling of info 
+
+Features In progress 
+
+Building a Dynamic Scale System 
+Building A Dynamic Chord System 
