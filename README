@@ -23,3 +23,16 @@ Features In progress
 
 Building a Dynamic Scale System 
 Building A Dynamic Chord System 
+
+concept for scale drop down when the a scale is selected from the dropdown it grabbed from the scales.rb file 
+and then the form generates a midi composition randomly grabbing the notes within the selected scale. 
+
+Code that works out side of Ramaze app looks like this 
+
+require 'scale'
+
+def scale_song
+ s=[ ]
+ 32.times {|n| s << lydian_min[rand(lydian_min.size)] }
+ s.to_midi("scale_song1.mid")
+end
