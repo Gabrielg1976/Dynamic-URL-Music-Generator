@@ -12,3 +12,8 @@ it requires 3 Arguments after the play
 3rd => is the scale you want the composition based around 
  
 Example url would look like => http://localhost:7000/play/32/120/major
+
+Resent Changes include
+
+Added require midilib Gem to the app.rb file 
+Finished Designing rough basic forms layout  
