@@ -18,7 +18,9 @@ Resent Changes include
 Created a MDA file that will be the foundation of all the other music library such as 
 the scales and chord libraries.
 
-added to the /lib/audio_system.rb 
+added to the /lib/audio_system.rb
+added the /lib/scale.rb controls the scales structure
+added the the /lib/chords.rb controls the chord structure ( calls on the scales.rb file )
 
 Added require midilib Gem to the app.rb file 
 Finished Designing rough basic forms layout 
