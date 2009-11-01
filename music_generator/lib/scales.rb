@@ -1,188 +1,184 @@
-#
-#    This program is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU Affero General Public License for more details.
-#
-#    You should have received a copy of the GNU Affero General Public License
-#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
+# The MIT License
+# Copyright (c) 2009 Gabriel Garrod
+# 
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+# THE SOFTWARE.
 
 # Listed Compiled by Gabriel D Garrod written for live ruby coding midi systems 
 # Note References & each scale is now a method 
 
-# Development Notes
 
-# example of future outcome
-# note= scale_name+randomized by it length+transpose needs a number 24 to -24
-#nt=major[rand(major.length.transpose(5))]
-
-/c=60::c#=61::d=62::d#=63::e=64::f=65::f#=66::g=67::g#=68::a=69::a#=70::b=71::c=72/
+/c=0::c#=1::d=2::d#=3::e=4::f=5::f#=6::g=7::g#=8::a=9::a#=10::b=11::c=12/
 
 # Create a second Pattern Page that sets C=0
 
 
 # 54 Scales in the Chart Below
 def chromatic
- chromatic=[60,61,62,63,64,65,66,67,68,69,70,71,72]# C Db D Eb E F Gb G Ab A  Bb B  C
+ chromatic=[0,1,2,3,4,5,6,7,8,9,10,11,12]# C Db D Eb E F Gb G Ab A  Bb B  C
 end
 def spanish_8_tone
- spanish_8_tone=[60,61,63,64,65,66,68,70,72]# C Db Eb E F Gb Ab Bb C
+ spanish_8_tone=[0,1,3,4,5,6,8,10,12]# C Db Eb E F Gb Ab Bb C
 end
 def flamenco
- flamenco=[60,61,63,64,65,67,68,70,72]# C Db Eb E F G Ab Bb C
+ flamenco=[0,1,3,4,5,7,8,10,12]# C Db Eb E F G Ab Bb C
 end
 def symmetrical
- symmetrical=[60,61,63,64,66,67,69,70,72]# C Db Eb E Gb G A Bb C
+ symmetrical=[0,1,3,4,6,7,9,10,12]# C Db Eb E Gb G A Bb C
 end
 def diminished
- diminished=[60,62,63,65,66,68,69,71,72]# C D Eb F Gb Ab A B C
+ diminished=[0,2,3,5,6,8,9,11,12]# C D Eb F Gb Ab A B C
 end
 def whole_tone
- whole_tone=[60,62,63,66,68,70,72]# C D E Gb Ab Bb C
+ whole_tone=[0,2,3,6,8,10,12]# C D E Gb Ab Bb C
 end
 def augmented
- augmented=[60,63,64,67,68,72]# C Eb E G Ab  C
+ augmented=[0,3,4,7,8,12]# C Eb E G Ab  C
 end
 def three_semitone
- three_semitone=[60,63,66,69,72]# C Eb Gb A C
+ three_semitone=[0,3,6,9,12]# C Eb Gb A C
 end
 def four_semitone
- four_semitone=[60,64,68,72]# C E Ab C
+ four_semitone=[0,4,8,12]# C E Ab C
 end
 def ultra_locrian
- ultra_locrian=[60,61,63,66,68,69,72]# C Db Eb E Gb Ab A C
+ ultra_locrian=[0,1,3,6,8,9,12]# C Db Eb E Gb Ab A C
 end
 def super_locrian
- super_locrian=[60,61,63,64,66,68,70,72]# C Db Eb E Gb Ab Bb C
+ super_locrian=[0,1,3,4,6,8,10,12]# C Db Eb E Gb Ab Bb C
 end
 def indian_ish
- indian_ish=[60,61,63,64,67,68,70,72]# C Db Eb E G Ab Bb C
+ indian_ish=[0,1,3,4,7,8,10,12]# C Db Eb E G Ab Bb C
 end
 def locrian
- locrian=[60,61,63,65,66,68,70,72]# C Db Eb F Gb Ab Bb C
+ locrian=[0,1,3,5,6,8,10,12]# C Db Eb F Gb Ab Bb C
 end
 def phrygian
- phrygian=[60,61,63,65,67,68,70,72]# C Db Eb F G  Ab Bb C 
+ phrygian=[0,1,3,5,7,8,10,12]# C Db Eb F G  Ab Bb C 
 end
 def neapolitan_min
- neapolitan_min=[60,61,63,65,67,68,71,72]#  C Db Eb F G Ab B C
+ neapolitan_min=[0,1,3,5,7,8,11,12]#  C Db Eb F G Ab B C
 end
 def javanese
- javanese=[60,61,63,65,67,69,70,72]# C Db Eb F G A Bb C
+ javanese=[0,1,3,5,7,9,10,12]# C Db Eb F G A Bb C
 end
 def neapolitan_maj
- neapolitan_maj=[60,61,63,67,69,69,71,72]#  C Db Eb F G A B C
+ neapolitan_maj=[0,1,3,7,9,9,11,12]#  C Db Eb F G A B C
 end
 def todi
- todi=[60,61,63,66,67,68,71,72]# C Db Eb Gb G Ab B C
+ todi=[0,1,3,6,7,8,11,12]# C Db Eb Gb G Ab B C
 end
 def persian
- persian=[60,61,64,65,68,70,71,72]# C Db E F Gb Ab B C
+ persian=[0,1,4,5,8,10,11,12]# C Db E F Gb Ab B C
 end
 def oriental
- oriental=[60,61,64,65,66,69,70,72]# C Db E F Gb A Bb C
+ oriental=[0,1,4,5,6,9,10,12]# C Db E F Gb A Bb C
 end
 def maj_phryg
- maj_phryg=[60,61,64,65,66,68,70,72]# C Db E F G Ab Bb C  
+ maj_phryg=[0,1,4,5,6,8,10,12]# C Db E F G Ab Bb C  
 end
 def double_harmonic
- double_harmonic=[60,61,64,65,68,71,72]# C Db E F G Ab B C    
+ double_harmonic=[0,1,4,5,8,11,12]# C Db E F G Ab B C    
 end
 def marva
- marva=[60,61,64,66,67,69,71,72]# C Db E Gb G A B C
+ marva=[0,1,4,6,7,9,11,12]# C Db E Gb G A B C
 end
 def enigmatic
- enigmatic=[60,61,64,66,68,70,71,72]# C Db E Gb Ab Bb B C
+ enigmatic=[0,1,4,6,8,10,11,12]# C Db E Gb Ab Bb B C
 end
 def locrian_natural
- locrian_natural=[60,62,63,65,66,68,70,72]# C D Eb F Gb Ab Bb C
+ locrian_natural=[0,2,3,5,6,8,10,12]# C D Eb F Gb Ab Bb C
 end
 def minor
- minor=[60,62,63,65,67,68,70,72]# (natural)C D Eb F G Ab Bb C                
+ minor=[0,2,3,5,7,8,10,12]# (natural)C D Eb F G Ab Bb C                
 end
 def harmonic_minor
- harmonic_minor=[60,62,63,65,67,68,71,72]# C D Eb F G Ab B C                  
+ harmonic_minor=[0,2,3,5,7,8,11,12]# C D Eb F G Ab B C                  
 end
 def dorian
- dorian=[60,62,63,65,67,69,70,72]# C D Eb F G A Bb C
+ dorian=[0,2,3,5,7,9,10,12]# C D Eb F G A Bb C
 end
 def melodic_minor
- melodic_minor=[60,62,63,65,67,69,71,72]# C D Eb F G A B C                  
+ melodic_minor=[0,2,3,5,7,9,11,12]# C D Eb F G A B C                  
 end
 def hungarian_gypsy
- hungarian_gypsy =[60,62,63,66,67,68,70,72]# C D Eb Gb G Ab Bb C
+ hungarian_gypsy =[0,2,3,6,7,8,10,12]# C D Eb Gb G Ab Bb C
 end
 def hungarian_minor
- hungarian_minor=[60,62,63,66,67,68,71,72]# C D Eb Gb G Ab B C                
+ hungarian_minor=[0,2,3,6,7,8,11,12]# C D Eb Gb G Ab B C                
 end
 def romanian
- romanian=[60,62,63,66,67,69,70,72]# C D Eb Gb G A Bb C
+ romanian=[0,2,3,6,7,9,10,12]# C D Eb Gb G A Bb C
 end
 def maj_locrian
- maj_locrian=[60,62,64,65,66,68,70,72]# C  D  E  F  Gb Ab Bb C
+ maj_locrian=[0,2,4,5,6,8,10,12]# C  D  E  F  Gb Ab Bb C
 end
 def hindu
- hindu=[60,62,64,65,67,68,70,72]# C  D  E  F  G  Ab Bb C  
+ hindu=[0,2,4,5,7,8,10,12]# C  D  E  F  G  Ab Bb C  
 end
 def ethiopian
- ethiopian=[60,62,64,65,67,68,70,71,72]# C  D  E  F  G  Ab B  C 
+ ethiopian=[0,2,4,5,7,8,10,11,12]# C  D  E  F  G  Ab B  C 
 end
 def mixolydian
- mixolydian=[60,62,64,65,67,69,70,72]# C  D  E  F  G  A  Bb C  
+ mixolydian=[0,2,4,5,7,9,10,12]# C  D  E  F  G  A  Bb C  
 end
 def major
- major=[60,62,64,65,67,69,71,72]# C  D  E  F  G  A  B  C  
+ major=[0,2,4,5,7,9,11,12]# C  D  E  F  G  A  B  C  
 end
 def mixolydian_aug
- mixolydian_aug=[60,62,64,65,68,70,72]# C  D  E  F  Ab A  Bb C  
+ mixolydian_aug=[0,2,4,5,8,10,12]# C  D  E  F  Ab A  Bb C  
 end
 def harmonic_major
- harmonic_major=[60,62,64,65,68,69,71,72]# C  D  E  F  Ab A  B  C  
+ harmonic_major=[0,2,4,5,8,9,11,12]# C  D  E  F  Ab A  B  C  
 end
 def lydian_min
- lydian_min=[60,62,64,66,67,68,70,72]# C  D  E  Gb G  Ab Bb C  
+ lydian_min=[0,2,4,6,7,8,10,12]# C  D  E  Gb G  Ab Bb C  
 end
 def lydian_dominant
- lydian_dominant=[60,62,64,66,69,70,72]#C  D  E  Gb G  A  Bb C
+ lydian_dominant=[0,2,4,6,9,10,12]#C  D  E  Gb G  A  Bb C
 end
 def lydian
- lydian=[60,62,64,66,67,69,71,72]# C  D  E  Gb G  A  B  C  
+ lydian=[0,2,4,6,7,9,11,12]# C  D  E  Gb G  A  B  C  
 end
 def lydian_aug
- lydian_aug=[60,62,64,66,68,69,70,72]# C  D  E  Gb Ab A  Bb C  
+ lydian_aug=[0,2,4,6,8,9,10,12]# C  D  E  Gb Ab A  Bb C  
 end
 def leading_whole_tone
- leading_whole_tone=[60,62,64,66,68,70,71,72]#   C  D  E  Gb Ab Bb B  C  
+ leading_whole_tone=[0,2,4,6,8,10,11,12]#   C  D  E  Gb Ab Bb B  C  
 end
 def bluesy
- bluesy=[60,63,64,65,67,69,70,72]# C  Eb E  F  G  A  Bb C  
+ bluesy=[0,3,4,5,7,9,10,12]# C  Eb E  F  G  A  Bb C  
 end
 def hungarian_major
- hungarian_major=[60,63,64,66,67,69,70,72]# C  Eb E  Gb G  A  Bb C 
+ hungarian_major=[0,3,4,6,7,9,10,12]# C  Eb E  Gb G  A  Bb C 
 end
 def pelog
- pelog=[60,61,63,67,70,72]# C  Db Eb G  Bb C  
+ pelog=[0,1,3,7,10,12]# C  Db Eb G  Bb C  
 end
 def iwato
- iwato=[60,61,65,66,70,72]# C  Db F  Gb Bb C 
+ iwato=[0,1,5,6,10,12]# C  Db F  Gb Bb C 
 end
 def japanese
- japanese=[60,61,65,67,68,72]# C  Db F  G  Ab C 
+ japanese=[0,1,5,7,8,12]# C  Db F  G  Ab C 
 end
 def hirajoshi
- hirajoshi=[60,62,63,67,68,72]# C  D  Eb G  Ab C 
+ hirajoshi=[0,2,3,7,8,12]# C  D  Eb G  Ab C 
 end
 def pentatonic_major
- pentatonic_major=[60,62,64,67,69,72]# C  D  E  G  A  C  
+ pentatonic_major=[0,2,4,7,9,12]# C  D  E  G  A  C  
 end
 def egyptian
- egyptian=[60,62,65,67,70,72]# C  D  F  G  Bb C  
+ egyptian=[0,2,5,7,10,12]# C  D  F  G  Bb C  
 end
 def pentatonic_minor
- pentatonic_minor=[60,63,65,67,70,72]# C  Eb F  G  Bb C  
+ pentatonic_minor=[0,3,5,7,10,12]# C  Eb F  G  Bb C  
 end
 def chinese
- chinese=[60,64,66,67,71,72]# C  E  Gb G  B  C  
+ chinese=[0,4,6,7,11,12]# C  E  Gb G  B  C  
 end
 
