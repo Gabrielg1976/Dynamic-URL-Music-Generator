@@ -27,12 +27,27 @@ Building A Dynamic Chord System
 concept for scale drop down when the a scale is selected from the dropdown it grabbed from the scales.rb file 
 and then the form generates a midi composition randomly grabbing the notes within the selected scale. 
 
-Code that works out side of Ramaze app looks like this 
+:::Custom Flash Sampler Application specs:::
 
-require 'scale'
+1. This needs to have a preset Audio sample like piano on shoots 
+that can be mapped over keyboard interface..( future version will allow user to upload there own sample and map them across the musical Range )
 
-def scale_song
- s=[ ]
- 32.times {|n| s << lydian_min[rand(lydian_min.size)] }
- s.to_midi("scale_song1.mid")
-end
+2. The samples will be triggered via midi that is streamed in through the use of API URL.
+
+the examples of how the url works is this 
+
+http://localhost:7000/64/120/major 
+
+64 = the number of notes
+120 is the tempo of the track 
+major = will be called from a scale library
+
+Url will be feed into the flash player through a simple input box.
+so the user will type in the url and the sounds will triggered.
+
+The user will be allowed to change the samples dynamical while the music is playing and will change on the fly..
+      
+Mapping Function needed for mapping over the virtual keyboard 
+saying you can have a piano sample playing over the first 4 octaves and a violin mapped over the last 4 octaves.
+
+
