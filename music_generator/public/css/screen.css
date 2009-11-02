@@ -9,7 +9,7 @@ h1 {
 
 body {
   margin: 2em;
-  background-color:#A5CAAB; 
+  background-color:#830F12; 
 
 }
 
@@ -35,15 +35,25 @@ body {
 
 
 #content2 {
- float:right;
  width:30%;
  margin: 1em;
- background: #ddd;
+ background: #a29396;
  padding: 1em;
  -moz-border-radius: 3em;
  -webkit-border-radius: 3em;
  border-radius: 3em;
 }
+
+#content3{	
+ width:50%;
+ margin: 1em;
+ background: #a29396;
+ padding: 1em;
+ -moz-border-radius: 3em;
+ -webkit-border-radius: 3em;
+ border-radius: 3em;
+}
+
 
 
 p {

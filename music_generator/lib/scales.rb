@@ -11,12 +11,9 @@
 
 # Listed Compiled by Gabriel D Garrod written for live ruby coding midi systems 
 # Note References & each scale is now a method 
+/c=0::db=1::d=2::eb=3::E=4::F=5::Gb=6::G=7::Ab=8::a=9::a#=10::b=11::c=12/
 
-
-/c=0::c#=1::d=2::d#=3::e=4::f=5::f#=6::g=7::g#=8::a=9::a#=10::b=11::c=12/
-
-# Create a second Pattern Page that sets C=0
-
+require 'audio_system'
 
 # 54 Scales in the Chart Below
 def chromatic

@@ -11,6 +11,7 @@
 
 # Listed Compiled by Gabriel D Garrod written for live ruby coding midi systems 
 # Note References & each scale is now a method
+require 'scales'
 
 def chord_maj1(low_note)
 add_notes([0,4,7].collect { |x| x + low_note })
