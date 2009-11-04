@@ -15,7 +15,9 @@ Example url would look like => http://localhost:7000/play/32/120/major
 
 Resent Changes include
 
-Created a MDA file that will be the foundation of all the other music library such as 
+Got the tester form to change the url dynamically
+ 
+added a MDA file that might be the foundation of all the other music library such as 
 the scales and chord libraries.
 
 added to the /lib/audio_system.rb
@@ -26,13 +28,24 @@ Added require midilib Gem to the app.rb file
 Finished Designing rough basic forms layout 
 created a lib folder for storing scale.rb and chord.rb for dynamic pulling of info 
 
+The Engine to this system for converting different data types into music 
+is also found currently in the lib folder called super_midi.rb  
+
+
 Features In progress 
 
-Building a Dynamic Scale System 
-Building A Dynamic Chord System 
+Built A Dynamic Scale System 
+Built A Dynamic Chord System 
 
-concept for scale drop down when the a scale is selected from the dropdown it grabbed from the scales.rb file 
+Concept for scale drop down when the a scale is selected from the dropdown it grabbed from the scales.rb file 
 and then the form generates a midi composition randomly grabbing the notes within the selected scale. 
+
+
+
+
+
+
+
 
 :::Custom Flash Sampler Application specs:::
 

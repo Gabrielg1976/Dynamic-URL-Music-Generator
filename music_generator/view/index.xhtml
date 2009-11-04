@@ -2,27 +2,22 @@
 <div id="content3">
 <h4>Please choose your Compositions Options</h4>
 <br/><br/>
-Number of Measures&nbsp;<input type="text" name="notes" id="notes" size="5px" />&nbsp;&nbsp;
-Tempo:&nbsp;<input type="text" name ="tempo" id="tempo" size="5px" />&nbsp;
+<FORM id="play" NAME="play" action="" METHOD="POST" onsubmit="submitClick()">
+Number of Measures&nbsp;<input type="text" id="notes" size="5px" />&nbsp;&nbsp;
+Tempo:&nbsp;<input type="text" id="tempo" size="5px" />&nbsp;
 Scale:&nbsp;<input type="text" name="scale" id="scale" size="10px">
-</b>
-
-<!-- <select id="ComboBox" >
-<option value="major">Major</option>
-<option value="minor">Minor</option>
-<option value="blues">Blues</option>
-<option value="mixolodian">Mixolodian</option>
-<option value="india">India</option>
-<option value="melodic_minor">Melodic Minor</option>
-<option value="romain">Romain</option>
-<option value="spanish">Spanish</option>
-</optgroup>
-</select> -->
 <br/><br/>
-<input type="submit" name="submit" id="submit" value="Generate Music"/>
+<input type="submit" name="submit" id="submit" value="Generate Song" />
+</FORM>
 </div>
-
-
-
 </p>
 
+<script type="text/javascript">
+function submitClick() {
+notes = document.getElementById('notes').value 
+tempo = document.getElementById('tempo').value
+scale =document.getElementById('scale').value
+document.play.action= "/play/" + notes + "/"+ tempo +"/"+ scale;
+return false;
+}
+</script>
