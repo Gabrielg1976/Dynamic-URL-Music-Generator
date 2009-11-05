@@ -10,11 +10,11 @@ class MainController < Controller
   def index
     @title = "Welcome to a Dynamic Url Music Generator"
   end
-
+  
   def play(notes, tempo, scale)
-    @title="New Song Info "
-    "<center> Number of notes in this song:<b> #{notes} </b> <br/> The tempo is:  <b> #{tempo} </b> <br/> The scale picked was <b> #{scale} </b><center>"
-  end
+     @title="New Song "
+     "<center> Number of notes in this song:<b> #{notes} </b> <br/> The tempo is:  <b> #{tempo} </b> <br/> The scale picked was <b> #{scale} </b><center>"
+   end
 
   def notemplate
     "there is no 'notemplate.xhtml' associated with this action"

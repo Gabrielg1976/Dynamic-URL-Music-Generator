@@ -5,12 +5,130 @@
 <FORM id="play" NAME="play" action="" METHOD="POST" onsubmit="submitClick()">
 Number of Measures&nbsp;<input type="text" id="notes" size="5px" />&nbsp;&nbsp;
 Tempo:&nbsp;<input type="text" id="tempo" size="5px" />&nbsp;
-Scale:&nbsp;<input type="text" name="scale" id="scale" size="10px">
+Scale:&nbsp;<select id="scale">
+  <option value="major">Major</option>
+  <option value="minor">Minor</option>
+  <option value="augmented">Augmented</option>
+  <option value="spanish">Spanish</option>
+</select><br/><br/>
+<b>Chords&nbsp;</b><input type="radio"/>&nbsp;
+<b>Instrument&nbsp;</b><select id="instrument">
+  <option value="SinOsc">Sin</option>
+  <option value="TriOsc">Triangle</option>
+  <option value="SqrOsc">Square</option>
+  <option value="SawOsc">Saw</option>
+  <option value="909">909</option>
+  <option value="707">707</option>
+</select><br/><br/>
 <br/><br/>
 <input type="submit" name="submit" id="submit" value="Generate Song" />
 </FORM>
 </div>
 </p>
+
+<div id="content2">
+<h3>Drum Machine</h3>
+<b>Create 16 beat Patterns</b><br/>
+<select id="drums">
+<option value="SinOsc">Bass</option>
+<option value="TriOsc">Kick</option>
+<option value="SqrOsc">Snare</option>
+<option value="909">909</option>
+<option value="707">707</option>
+</select>
+<input type="checkbox"id="b1"/>
+<input type="checkbox"id="b2"/>
+<input type="checkbox"id="b3"/>
+<input type="checkbox"id="b4"/>
+<input type="checkbox"id="b5"/>
+<input type="checkbox"id="b6"/>
+<input type="checkbox"id="b7"/>
+<input type="checkbox"id="b8"/>
+<input type="checkbox"id="b9"/>
+<input type="checkbox"id="b10"/>
+<input type="checkbox"id="b11"/>
+<input type="checkbox"id="b12"/>
+<input type="checkbox"id="b13"/>
+<input type="checkbox"id="b14"/>
+<input type="checkbox"id="b15"/>
+<input type="checkbox"id="b16"/>
+<br/>
+<select id="drums">
+<option value="SinOsc">Bass</option>
+<option value="TriOsc">Kick</option>
+<option value="SqrOsc">Snare</option>
+<option value="909">909</option>
+<option value="707">707</option>
+</select>
+<input type="checkbox"id="b1"/>
+<input type="checkbox"id="b2"/>
+<input type="checkbox"id="b3"/>
+<input type="checkbox"id="b4"/>
+<input type="checkbox"id="b5"/>
+<input type="checkbox"id="b6"/>
+<input type="checkbox"id="b7"/>
+<input type="checkbox"id="b8"/>
+<input type="checkbox"id="b9"/>
+<input type="checkbox"id="b10"/>
+<input type="checkbox"id="b11"/>
+<input type="checkbox"id="b12"/>
+<input type="checkbox"id="b13"/>
+<input type="checkbox"id="b14"/>
+<input type="checkbox"id="b15"/>
+<input type="checkbox"id="b16"/>
+<br/>
+<select id="drums">
+<option value="SinOsc">Bass</option>
+<option value="TriOsc">Kick</option>
+<option value="SqrOsc">Snare</option>
+<option value="909">909</option>
+<option value="707">707</option>
+</select>
+<input type="checkbox"id="b1"/>
+<input type="checkbox"id="b2"/>
+<input type="checkbox"id="b3"/>
+<input type="checkbox"id="b4"/>
+<input type="checkbox"id="b5"/>
+<input type="checkbox"id="b6"/>
+<input type="checkbox"id="b7"/>
+<input type="checkbox"id="b8"/>
+<input type="checkbox"id="b9"/>
+<input type="checkbox"id="b10"/>
+<input type="checkbox"id="b11"/>
+<input type="checkbox"id="b12"/>
+<input type="checkbox"id="b13"/>
+<input type="checkbox"id="b14"/>
+<input type="checkbox"id="b15"/>
+<input type="checkbox"id="b16"/>
+<br/>
+<select id="drums">
+<option value="SinOsc">Bass</option>
+<option value="TriOsc">Kick</option>
+<option value="SqrOsc">Snare</option>
+<option value="909">909</option>
+<option value="707">707</option>
+</select>
+<input type="checkbox"id="b1"/>
+<input type="checkbox"id="b2"/>
+<input type="checkbox"id="b3"/>
+<input type="checkbox"id="b4"/>
+<input type="checkbox"id="b5"/>
+<input type="checkbox"id="b6"/>
+<input type="checkbox"id="b7"/>
+<input type="checkbox"id="b8"/>
+<input type="checkbox"id="b9"/>
+<input type="checkbox"id="b10"/>
+<input type="checkbox"id="b11"/>
+<input type="checkbox"id="b12"/>
+<input type="checkbox"id="b13"/>
+<input type="checkbox"id="b14"/>
+<input type="checkbox"id="b15"/>
+<input type="checkbox"id="b16"/>
+<br/><br/>
+</div>
+
+
+
 
 <script type="text/javascript">
 function submitClick() {
